@@ -2,13 +2,13 @@
   <div class="container">
     <h2 class="my-4">Questions</h2>
     <ul class="questions_list">
-      <li v-for="(question, index) in questions" :key="question.questionText" v-bind:class="[!selected[index] && error] + ' mb-4'">
+      <li v-for="(question, index) in questions" :key="question.questionText" v-bind:class="[!answered[index] && error] + ' mb-4'">
         <div class="question_title">
           {{index + 1}}. {{ question.questionText }}
         </div>
         <b-form-group v-slot="{ ariaDescribedby }" class="my-2">
           <div v-for="option in question.answerOptions" :key="option.answerText">
-            <b-form-radio v-model="selected[index]" :aria-describedby="ariaDescribedby" :name="question.questionText" :value="option">{{ option.answerText }}</b-form-radio>
+            <b-form-radio v-model="answered[index]" :aria-describedby="ariaDescribedby" :name="question.questionText" :value="option">{{ option.answerText }}</b-form-radio>
           </div>
         </b-form-group>
       </li>
@@ -26,7 +26,7 @@ export default {
 	name: 'QuestionsPage',
 	data: function() {
 		return {
-      selected: [],
+      answered: [],
       error: null,
 		}
 	},
@@ -35,13 +35,13 @@ export default {
   },
 	methods: {
 		submit: function() {
-      const answered = this.selected.filter(item => !!item);
+      const answered = this.answered.filter(item => !!item);
       if (answered.length !== this.questions.length) {
         this.error = 'error';
         alert("Please answer all the questions");
       } else {
         this.error = null;
-        this.$router.push({ name: 'results', params: { data: this.selected } });
+        this.$router.push({ name: 'results', params: { data: this.answered } });
       }
     }
   }

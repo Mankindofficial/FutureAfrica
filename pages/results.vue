@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container text-center">
     <div v-if="answers.length > 0">
       <h3 class="mt-5 mb-4">Your answers were submitted successfully.</h3>
       <div>
