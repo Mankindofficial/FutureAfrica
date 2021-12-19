@@ -8,11 +8,35 @@
     ]
   },
   {
+    "questionText": "What element does 'O' represent on the periodic table?",
+    "answerOptions": [
+      { "answerText": "Oxford", "isCorrect": false },
+      { "answerText": "Oxygen", "isCorrect": true },
+      { "answerText": "Oxytocin", "isCorrect": false }
+    ]
+  },
+  {
     "questionText": "Who is CEO of Tesla?",
     "answerOptions": [
       { "answerText": "Jeff Bezos", "isCorrect": false },
       { "answerText": "Elon Musk", "isCorrect": true },
       { "answerText": "Bill Gates", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "How many colours are in the Olympic rings?",
+    "answerOptions": [
+      { "answerText": "6", "isCorrect": false },
+      { "answerText": "5", "isCorrect": true },
+      { "answerText": "4", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "What is Cristiano Ronaldo famous for?",
+    "answerOptions": [
+      { "answerText": "Car racing", "isCorrect": false },
+      { "answerText": "Football", "isCorrect": true },
+      { "answerText": "Tennis", "isCorrect": false }
     ]
   },
   {
@@ -29,6 +53,30 @@
       { "answerText": "7", "isCorrect": true },
       { "answerText": "4", "isCorrect": false },
       { "answerText": "6", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Who is the first black president of the United States of America",
+    "answerOptions": [
+      { "answerText": "Kevin Hart", "isCorrect": false },
+      { "answerText": "Nelson Mandela", "isCorrect": false },
+      { "answerText": "Barrack Obama", "isCorrect": true }
+    ]
+  },
+  {
+    "questionText": "What's the capital of Spain?",
+    "answerOptions": [
+      { "answerText": "Madrid", "isCorrect": true },
+      { "answerText": "Barcelona", "isCorrect": false },
+      { "answerText": "Dubai", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Complete the well-known phrase: 'A leopard never changes its ____' ",
+    "answerOptions": [
+      { "answerText": "Hunting habits", "isCorrect": false },
+      { "answerText": "Spots", "isCorrect": true },
+      { "answerText": "Swag", "isCorrect": false }
     ]
   }
 ]
